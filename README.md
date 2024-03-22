@@ -21,27 +21,45 @@ Testing the webserver.
 
 ## PROGRAM:
 
-```
+```C
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webserver</title>
-</head>
-<body>
-    <h1>Top 5 Revenue Companies</h1>
-    <ol>
-        <li>Apple</li>
-        <li>Google</li>
-        <li>Amazon</li>
-        <li>Samsung</li>
-        <li>TATA</li>
-    </ol>
-</body>
+<html>
+      <title>top 5 software industries</title>
+      <body>
+             <table border="2" cellspacing="10" cellpaddding="6">
+                     <caption> Top 5 Revenue Generating Software Companies </caption>
+                     <tr>
+<th>s.no</th>
+<th>companies</th>
+<th>revenue</th> 
+</tr>  
+<tr> 
+<th>1</th>
+<th>Microsoft</th>
+<th>65 billion</th>
+</tr>
+<tr>
+<th>2</th>
+<th>oracle</th>
+<th>29.5 billon</th>
+</tr>
+<tr>
+<th>3</th>
+<th>IBM </th>
+<th>29.1 billon</th>
+</tr>
+<tr>
+<th>4</th>
+<th>SAP</th>
+<th>6.4 billon</yh>
+</tr>
+<tr>
+<th>5</th>
+<th>symentec</th>
+<th>5.6 billion</th>
+</boby>
 </html>
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -58,11 +76,8 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![image](https://github.com/indrajasukumar/simplewebserver/assets/145115195/41f25e5b-bb5c-4f9b-b280-abdba50f7ca9)
-![image-1](https://github.com/indrajasukumar/simplewebserver/assets/145115195/338b512e-15b6-49e5-b9a6-23c2a4f8890a)
-
-
-
+![1](https://github.com/indrajasukumar/simplewebserver/assets/145115195/14946870-e097-42cd-8aa5-80b45eb1f5ab)
+![2](https://github.com/indrajasukumar/simplewebserver/assets/145115195/5d435419-c487-4830-bc28-d092b3660b31)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
